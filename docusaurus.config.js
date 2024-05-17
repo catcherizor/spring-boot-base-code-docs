@@ -11,6 +11,10 @@ const config = {
   title: 'Arkopay',
   tagline: 'Backend Documentation',
   favicon: 'img/favicon.ico',
+  markdown: {
+    mermaid: true
+  },
+  themes: ['@docusaurus/theme-mermaid'],
 
   // Set the production url of your site here
   url: 'https://your-docusaurus-site.example.com',

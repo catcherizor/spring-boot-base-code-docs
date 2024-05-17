@@ -15,7 +15,7 @@ To Run & Install Application there are some thing you need to know and following
 - [PostgreSQL](https://www.postgresql.org/download/) version 15.0 or above
 - [Google Cloud CLI](https://dl.google.com/dl/cloudsdk/channels/rapid/GoogleCloudSDKInstaller.exe)
   - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-## Setup
+## Setup Base Application
 There Are Properties you need to configure first.
 ### Configuration if you are directly using local machine
 
@@ -77,51 +77,54 @@ mvn spring-boot:install
 
 ## Setup Document AI Processor
 
-You can add headings and subheadings in one of two ways:
+You can following this link for the installation and setup [Document AI Setup](https://cloud.google.com/document-ai/docs/setup)
 
-- Type `/heading` or `/h1`, `/h2`, or `/h3` to choose the heading size you want.
-- Use Markdown shortcuts, like `#`, `##`, and `###`.
-    - Create inline code by wrapping text with ``` (or with the shortcut `cmd/ctrl + e`).
 
-## Setup Google Cloud Service for Application
+1. Enable service in Google cloud service for Cloud Document AI API 
+2. After Enable the service go to menu Solutions -> All Products and click Document AI
+3. Create Custom Processor, you must create 2 processor KTP and NPWP, please provide images for that 2 documents for training processor purpose
+4. Then you can start to labeling image with key that have already defined in backend
+### Required Processor Key
+**KTP KEY**
+```js
+date_of_birth
+citizenship
+marital_status
+religion
+job_status
+blood_group
+fullname
+gender
+neighborhood_association_and_unit
+nik
+subdistrict
+address
+valid_until
+ward_or_village
+```
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+**NPWP KEY**
 
-<Tabs>
-  <TabItem value="linux" label="LInux" default>
-    Package contents.
+```js
+taxpayer_identity
+serial_code
+serial_code_16
+kpp_name
+address
+registration_date
+```
 
-    The `gcloud` CLI is available in package format for installation on Debian and Ubuntu systems. This package contains the `gcloud`, `gcloud alpha`, `gcloud beta`, `gsutil`, and `bq` commands only. It doesn't include `kubectl` or the App Engine extensions required to deploy an application using gcloud commands. If you want these components, you must install them separately.
+### Document AI Properties
+```js
+projectId
+location
+processorIdKTP
+processorIdNPWP
+```
+- [projectId] from dashboard of google cloud in project information section, project number properties
+- [location] the default is "us"
+- [processorId] from Overview of processor in basic information section
 
-    **Before you begin**
-
-    Before you install the gcloud CLI, make sure that your operating system meets the following requirements:
-
-    - It is an Ubuntu release that hasn't reached end-of-life or a Debian stable release that hasn't reached end-of-life
-    - It has recently updated its packages:
-
-        ```js
-        sudo apt-get update
-        ```
-    - It has apt-transport-https and curl installed:
-
-        ```js
-        sudo apt-get install apt-transport-https ca-certificates gnupg curl
-        ```
-    
-  </TabItem>
-  <TabItem value="macOs" label="macOS">
-    ```java
-        class HelloWorld {
-        public static void main(String args[]) {
-            System.out.println("Hello, World");
-        }
-        }
-    ```
-  </TabItem>
-  <TabItem value="banana" label="Windows">
-    This is a banana 🍌
-  </TabItem>
-</Tabs>
+## Setup Google Cloud CLI for Application
+You can following this link for the installation and setup [Install the gcloud CLI](https://cloud.google.com/sdk/docs/install#windows)
 ##
