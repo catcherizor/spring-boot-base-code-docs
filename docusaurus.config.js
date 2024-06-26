@@ -8,7 +8,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Arkopay',
+  title: 'Base Code Spring Boot',
   tagline: 'Backend Documentation',
   favicon: 'img/favicon.ico',
   markdown: {
@@ -70,9 +70,9 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Arkopay',
+        title: 'Base Code Spring Boot',
         logo: {
-          alt: 'Arkopay Logo',
+          alt: 'BaseCode Logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -125,7 +125,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Arkopay, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Yaman M Nur, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
