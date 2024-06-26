@@ -57,8 +57,8 @@ ENV DB_PASSWORD=${DB_PASSWORD}
 COPY . /usr/src/app
 
 WORKDIR /usr/src/app
-RUN mkdir -p /usr/src/arkopay_end_user_backend_volume
-RUN mkdir -p /usr/src/arkopay_end_user_backend_logs
+RUN mkdir -p /usr/src/basecode_end_user_backend_volume
+RUN mkdir -p /usr/src/basecode_end_user_backend_logs
 RUN mvn package -DskipTests
 
 # run
@@ -84,7 +84,7 @@ This Dockerfile also defines a multi-stage build process for a Java application,
     - **Set Environment Variables**: The environment variables `DB_URL_SYSTEM`, `DB_USERNAME`, and `DB_PASSWORD` are set using the build arguments.
     - **Copy Source Code**: The entire source code is copied from the local machine to the container at `/usr/src/app`.
     - **Set Working Directory**: The working directory within the container is set to `/usr/src/app`.
-    - **Create Directories**: Two directories, `/usr/src/arkopay_end_user_backend_volume` and `/usr/src/arkopay_end_user_backend_logs`, are created within the container. These could be used for storing application data and logs, respectively.
+    - **Create Directories**: Two directories, `/usr/src/basecode_end_user_backend_volume` and `/usr/src/basecode_end_user_backend_logs`, are created within the container. These could be used for storing application data and logs, respectively.
     - **Build Application**: Maven is used to package the application. The `-DskipTests` option skips running tests to speed up the build process.
 
 2. **Run Stage**:

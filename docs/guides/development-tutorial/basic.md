@@ -41,7 +41,7 @@ Further information regarding the Base Service provided in this section is avail
 ## Project Structure {#project-structure}
 
 ```bash
-arkopay-backend
+basecode-backend
 │   .env
 │   docker-compose.yml
 │   Dockerfile
@@ -51,7 +51,7 @@ arkopay-backend
 │   ├───main
 │   │   ├───java
 │   │   │   └───com
-│   │   │       └───arkopay
+│   │   │       └───basecode
 │   │   │           └───backend
 │   │   │               │   BackendApplication.java
 │   │   │               │
@@ -164,7 +164,7 @@ arkopay-backend
 │   └───test
 │       └───java
 │           └───com
-│               └───arkopay
+│               └───basecode
 │                   └───backend
 │                           BackendApplicationTests.java
 │

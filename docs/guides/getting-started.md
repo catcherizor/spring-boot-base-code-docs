@@ -24,7 +24,7 @@ spring.application.name=backend
 server.port=8080
 spring.app.jwtSecret=
 
-spring.datasource.url=jdbc:postgresql://localhost:5432/arkopay?useSSL=false&stringtype=unspecified
+spring.datasource.url=jdbc:postgresql://localhost:5432/basecode?useSSL=false&stringtype=unspecified
 spring.datasource.username=
 spring.datasource.password=
 
@@ -53,11 +53,11 @@ spring.google-cloud.service-account-keys-path=
 
 ### Configuration if you are using Docker for local environment
 ```js title=".env"
-DB_NAME=arkopay
+DB_NAME=basecode
 DB_USERNAME=
 DB_PASSWORD=
 DOCKER_FILE=Dockerfile
-IMAGE_APP=arkopay-backend
+IMAGE_APP=basecode-backend
 IMAGE_APP_VERSION=latest
 ```
 
