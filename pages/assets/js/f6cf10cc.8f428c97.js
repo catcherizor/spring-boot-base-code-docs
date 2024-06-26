@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkspring_boot_base_code_docs=self.webpackChunkspring_boot_base_code_docs||[]).push([[9073],{3966:s=>{s.exports=JSON.parse('{"label":"hola","permalink":"/spring-boot-base-code-docs/blog/tags/hola","allTagsPath":"/spring-boot-base-code-docs/blog/tags","count":1,"unlisted":false}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkspring_boot_base_code_docs=self.webpackChunkspring_boot_base_code_docs||[]).push([[637],{8256:o=>{o.exports=JSON.parse('{"label":"facebook","permalink":"/spring-boot-base-code-docs/blog/tags/facebook","allTagsPath":"/spring-boot-base-code-docs/blog/tags","count":1,"unlisted":false}')}}]);

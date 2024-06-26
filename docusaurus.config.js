@@ -17,10 +17,10 @@ const config = {
   themes: ['@docusaurus/theme-mermaid'],
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://catcherizor.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/spring-boot-base-code-docs',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.

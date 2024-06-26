@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkspring_boot_base_code_docs=self.webpackChunkspring_boot_base_code_docs||[]).push([[3613],{3088:s=>{s.exports=JSON.parse('{"label":"docusaurus","permalink":"/spring-boot-base-code-docs/blog/tags/docusaurus","allTagsPath":"/spring-boot-base-code-docs/blog/tags","count":4,"unlisted":false}')}}]);
